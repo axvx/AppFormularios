@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/white"
+    tools:context=".FormularioActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnGuardarInforme"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_buttons"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Crear informe"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtTituloInforme"
+                android:layout_width="363dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Escribe aquí el título del informe"
+                android:inputType="textMultiLine"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txtDescipcion"
+                android:layout_width="363dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Escribe aquí una descipción al formulario"
+                android:inputType="textMultiLine"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

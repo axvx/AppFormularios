@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/app_bar_style"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:background="@drawable/background_circular"
+                android:src="@drawable/icon_user"
+                style="@style/circular"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text="@string/login"
+                android:textColor="@color/color_tv_login"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:fontFamily="@font/didact_gothic"
+                android:text="@string/nombre_de_usuario"
+                android:textColor="@color/color_tv_login"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_shape"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="@string/hinttxt"
+                android:inputType="textPersonName"
+                android:textColor="@color/color_tv_login" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:fontFamily="@font/didact_gothic"
+                android:text="@string/tv_correo_login"
+                android:textColor="@color/color_tv_login"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCorreoR"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_shape"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="@string/hinttxt"
+                android:inputType="textPersonName"
+                android:textColor="@color/color_tv_login" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:fontFamily="@font/didact_gothic"
+                android:text="@string/tv_password_login"
+                android:textColor="@color/color_tv_login"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPasswordR"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_shape"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="@string/hinttxt"
+                android:inputType="textPassword"
+                android:textColor="@color/color_tv_login" />
+
+            <Button
+                android:id="@+id/btnRegistro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_buttons"
+                android:text="Registrarme"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Correo electrónico"
+                android:textColor="@color/color_tv_login"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_shape"
+                android:ems="10"
+                android:hint="@string/hinttxt"
+                android:inputType="textPersonName"
+                android:textColor="@color/color_tv_login" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tv_password_login"
+                android:textColor="@color/color_tv_login"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/esquinas_redondeadas"
+                android:fontFamily="@font/didact_gothic"/>
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_shape"
+                android:ems="10"
+                android:hint="@string/hinttxt"
+                android:inputType="textPassword"
+                android:textColor="@color/color_tv_login" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/color_tv_login"
+                android:drawableLeft="@drawable/icon_sobre"
+                android:paddingLeft="8dp"
+                android:text="Acceder con el correo electrónico"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLoginGoogle"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="3dp"
+                android:background="@drawable/rad_btn_google"
+                android:drawableLeft="@drawable/icon_google"
+                android:text="Acceder con google"
+                android:textColor="@color/color_tv_login"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

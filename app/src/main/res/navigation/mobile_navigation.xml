@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio_sesion"
+        android:name="com.example.appformularios.ui.login.LoginFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.appformularios.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_mis_formularios"
+        android:name="com.example.appformularios.ui.mis_formularios.MisFormulariosFragment"
+        android:label="@string/menu_mis_formularios"
+        tools:layout="@layout/fragment_mis_formularios" />
+
+    <fragment
+        android:id="@+id/nav_informes"
+        android:name="com.example.appformularios.ui.formularios_compartidos.FormulariosCompartidosFragment"
+        android:label="@string/menu_informes"
+        tools:layout="@layout/fragment_formularios_compartidos" />
+    <fragment
+        android:id="@+id/nav_ajustes"
+        android:name="com.example.appformularios.ui.ajustes.AjustesFragment"
+        android:label="@string/menu_ajustes"
+        tools:layout="@layout/fragment_ajustes" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.appformularios.ui.inicio.InicioFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_inicio" />
+</navigation>

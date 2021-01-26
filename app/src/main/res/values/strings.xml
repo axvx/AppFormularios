@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Formularios</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">  Usuario</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Cerrar sesión</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_mis_formularios">Mis formularios</string>
+    <string name="menu_informes">Informes</string>
+    <string name="menu_ajustes">Ajustes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inic_sesion">Iniciar sesión</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="hinttxt">Escribe aquí...</string>
+    <string name="todo">TODO</string>
+    <string name="Login">Iniciar sesión</string>
+    <string name="hintPregunta">Escribe aquí la pregunta</string>
+    <string name="hint_opcion">Escribe aquí la opción de respuesta</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="tv_correo_login">Correo electrónico</string>
+    <string name="tv_password_login">Contraseña</string>
+    <string name="acerca_de">Acerca de</string>
+</resources>

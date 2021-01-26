@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/white"
+    tools:context=".FormularioActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/app_bar_style"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="60dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo formulario"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_marginTop="4dp"
+            android:textSize="32dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnGuardarForm"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_buttons"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Crear formulario"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombreForm"
+                android:layout_width="363dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Escribe aquí el título del formulario"
+                android:inputType="textMultiLine"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txtDescipcion"
+                android:layout_width="363dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/esquinas_redondeadas"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Escribe aquí una descipción al formulario"
+                android:inputType="textMultiLine"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnAnadirPregunta"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/background_buttons"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Añadir pregunta"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/frmPreguntaAbierta"
+                android:layout_width="345dp"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:background="@color/greenback">
+
+                <EditText
+                    android:id="@+id/txtPreguntaAb"
+                    android:layout_width="340dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/esquinas_redondeadas"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/hintPregunta"
+                    android:inputType="textLongMessage"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnGuardarPreguntaAb"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_buttons"
+                    android:text="Guardar pregunta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/didact_gothic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frmPreguntaOpciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@color/greenback">
+
+                <EditText
+                    android:id="@+id/txtPreguntaOp"
+                    android:layout_width="340dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/esquinas_redondeadas"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/hintPregunta"
+                    android:inputType="textLongMessage"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/didact_gothic"/>
+
+                <Button
+                    android:id="@+id/btnAnadirOpciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_buttons"
+                    android:text="Añadir opción de respuesta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/didact_gothic"/>
+
+                <LinearLayout
+                    android:id="@+id/frmOpciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@color/greenback" >
+
+                    <EditText
+                        android:id="@+id/txtOpcionRespuesta"
+                        android:layout_width="350dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/esquinas_redondeadas"
+                        android:layout_marginTop="4dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="@string/hint_opcion"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/didact_gothic"/>
+
+                    <Button
+                        android:id="@+id/btnGuardarOpcion"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:layout_marginTop="4dp"
+                        android:text="Guardar opción"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/didact_gothic"/>
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listOpciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#86FFFFFF">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btnGuardarPreguntaOp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_buttons"
+                    android:text="Guardar pregunta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/didact_gothic" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listPreguntas"
+                android:layout_width="363dp"
+                android:layout_height="396dp"
+                android:layout_marginTop="10dp"
+                android:background="#86FFFFFF"
+                android:visibility="visible">
+
+            </ListView>
+
+
+            <Button
+                android:id="@+id/btnVerForms"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_buttons"
+                android:text="Ver formulario"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

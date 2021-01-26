@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".InformeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/app_bar_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informe"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_marginTop="4dp"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tvTituloFormularioInforme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informe"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/esquinas_redondeadas"
+            android:fontFamily="@font/didact_gothic"/>
+        <TextView
+            android:id="@+id/tvUsuarioRespuestas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/esquinas_redondeadas"
+            android:fontFamily="@font/didact_gothic"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvPreguntaRespuesta"
+            android:visibility="visible">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

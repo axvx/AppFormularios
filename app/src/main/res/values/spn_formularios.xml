@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="formularios_array">
+        <item>Formulario 1</item>
+        <item>Formulario 2</item>
+        <item>Formulario 3</item>
+        <item>Formulario 4</item>
+    </string-array>
+</resources>

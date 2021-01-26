@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".InicioActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/app_bar_style"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:menu="@menu/forms">
+    </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:background="@drawable/background_circular"
+                android:src="@drawable/icon_user"
+                style="@style/circular"/>
+
+            <Button
+                android:id="@+id/btnMisFormularios"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_buttons"
+                android:drawableLeft="@drawable/icon_forms"
+                android:paddingLeft="10dp"
+                android:text="Mis formularios"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnInformes"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_buttons"
+                android:drawableLeft="@drawable/icon_informes"
+                android:paddingLeft="10dp"
+                android:text="Informes"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnAjustes"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_buttons"
+                android:drawableLeft="@drawable/icon_ajustes"
+                android:paddingLeft="10dp"
+                android:text="Ajustes"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/btnActions"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/background_fab"
+                    android:drawableLeft="@drawable/icon_fab"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_marginTop="50dp">
+
+                    <Button
+                        android:id="@+id/btnLogOut"
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/background_circular"
+                        android:text="X"
+                        android:fontFamily="@font/didact_gothic"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</FrameLayout>

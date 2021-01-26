@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#43A6EE</color>
+    <color name="colorPrimaryDark">#456583</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="green">#01BD09</color>
+    <color name="greenback">#8101BF09</color>
+    <color name="gray_dark">#B0202020</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_tv_login">#D04A4848</color>
+    <color name="color_shape">#324A4848</color>
+</resources>
